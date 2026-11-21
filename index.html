@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reem Khattar · ML & data engineer</title>
-<meta name="description" content="Reem Khattar — ML and data engineer. Machine-learning projects built on real Formula 1 data, computer vision and race-engineering tools.">
+<meta name="description" content="Reem Khattar — ML and data engineer. Machine-learning projects on Formula 1 data, medical imaging and computer vision.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 <header class="hero">
   <div class="wrap">
     <h1>Reem<br>Khattar</h1>
-    <p class="lede">ML and data engineer. I build data pipelines, models and small tools that people actually use, mostly on real Formula&nbsp;1 timing data.</p>
+    <p class="lede">ML and data engineer. I build data pipelines, models and tools, mostly on Formula&nbsp;1 timing data.</p>
     <ul class="contact">
       <li><a href="https://github.com/reemkhattarr">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/reem-khattar-">LinkedIn</a></li>
@@ -29,7 +29,6 @@
   <section aria-labelledby="tower-title">
     <h2 id="tower-title">Projects</h2>
     <p class="legend">
-      <span class="item"><span class="s s-tool">Tool</span>runs on your own machine</span>
       <span class="item"><span class="s s-move">Moving</span>demo being rebuilt for this site</span>
       <span class="item"><span class="s s-done">Study</span>university project</span>
     </p>
@@ -52,11 +51,11 @@
         </a>
       </li>
       <li>
-        <a class="row" href="#pcb">
+        <a class="row" href="#mesothelioma">
           <span class="pos">P3</span>
-          <span class="name">PCB text extractor</span>
-          <span class="what">Finds component labels in PCB schematics and layouts</span>
-          <span class="s s-tool">Tool</span>
+          <span class="name">Mesothelioma classification</span>
+          <span class="what">Subtype classification on whole-slide pathology images</span>
+          <span class="s s-done">Study</span>
         </a>
       </li>
       <li>
@@ -80,6 +79,14 @@
           <span class="pos">P6</span>
           <span class="name">Computational intelligence</span>
           <span class="what">Genetic programming for symbolic regression, search labs</span>
+          <span class="s s-done">Study</span>
+        </a>
+      </li>
+      <li>
+        <a class="row" href="#ezelectronics">
+          <span class="pos">P7</span>
+          <span class="name">EZElectronics</span>
+          <span class="what">Electronics shop web app for customers and managers</span>
           <span class="s s-done">Study</span>
         </a>
       </li>
@@ -110,11 +117,11 @@
     <p class="links"><a href="https://github.com/reemkhattarr/race-engineer-tools">Code on GitHub</a></p>
   </article>
 
-  <article id="pcb" class="project">
-    <h3>PCB text extractor</h3>
-    <p class="stack">Python, OpenCV, PyMuPDF, Tesseract</p>
-    <p>Reads PCB schematic and layout PDFs and extracts component reference designators (R12, C4, U1…), including rotated text. It renders pages at high resolution, finds character candidates, matches them against templates and groups them into labels. Includes evaluation scripts that compare template matching with OCR.</p>
-    <p class="links"><a href="https://github.com/reemkhattarr/text_extractor">Code on GitHub</a></p>
+  <article id="mesothelioma" class="project">
+    <h3>Mesothelioma subtype classification</h3>
+    <p class="stack">PyTorch, CLAM, pathology foundation models, multiple-instance learning</p>
+    <p>Classifies malignant mesothelioma subtypes from whole-slide pathology images using only slide-level labels. Slides are split into patches, encoded with hand-crafted features and several pathology foundation models, then classified with CLAM, an attention-based multiple-instance model whose attention maps show which regions drove the prediction. Team project for Machine Learning in Applications, Politecnico di Torino; I worked on the feature extractors, the end-to-end pipeline and the attention heatmaps.</p>
+    <p class="links"><a href="https://github.com/reemkhattarr/mesothelioma-classification">Code on GitHub</a></p>
   </article>
 
   <article id="segmentation" class="project">
@@ -136,6 +143,12 @@
     <p class="stack">Python, NumPy, Jupyter</p>
     <p>Symbolic regression with genetic programming: evolving formula trees with crossover, mutation and a complexity penalty to find simple, accurate equations for a dataset. Plus labs on set cover, the travelling salesman problem and the n-puzzle with path search.</p>
     <p class="links"><a href="https://github.com/reemkhattarr/computational-intelligence-2024">Code on GitHub</a></p>
+  </article>
+  <article id="ezelectronics" class="project">
+    <h3>EZElectronics</h3>
+    <p class="stack">React, TypeScript</p>
+    <p>A web app for an electronics shop: customers browse, buy and track orders, and managers handle products and stock. Team project for Software Engineering, Politecnico di Torino.</p>
+    <p class="links"><a href="https://github.com/reemkhattarr/Ezelectronics">Code on GitHub</a></p>
   </article>
 </main>
 
